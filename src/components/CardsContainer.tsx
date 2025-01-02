@@ -1,11 +1,10 @@
 import Card from "./Card";
 
 interface CardsContainerProps {
-    theme: string;
     setTheme: (theme: string) => void;
 }
 
-const CardsContainer = ({ theme, setTheme }: CardsContainerProps) => {
+const CardsContainer = ({ setTheme }: CardsContainerProps) => {
     const themeDescriptions: { [key: string]: string } = {
         cupcake: "Sweet and delightful, just like a cupcake!",
         bumblebee: "Buzzing with energy and creativity!",

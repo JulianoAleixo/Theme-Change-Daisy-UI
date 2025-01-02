@@ -20,7 +20,7 @@ const App = () => {
             <div className="flex-1 overflow-y-auto">
                 <Hero theme={theme} setTheme={setTheme} />
                 <div className="divider"/>
-                <CardsContainer theme={theme} setTheme={setTheme} />
+                <CardsContainer setTheme={setTheme} />
                 <Footer />
             </div>
         </div>
