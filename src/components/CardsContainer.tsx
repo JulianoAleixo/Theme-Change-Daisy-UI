@@ -41,7 +41,7 @@ const CardsContainer = ({ setTheme }: CardsContainerProps) => {
     return (
         <div>
             <h2 className="pt-4 text-3xl font-bold text-center">Here are all the available themes</h2>
-            <div className="flex flex-wrap justify-center my-10 gap-10">
+            <div className="flex flex-wrap justify-center my-10 gap-10 mx-4">
                 {Object.entries(themeDescriptions).map(
                     ([themeName, message]) => (
                         <Card
