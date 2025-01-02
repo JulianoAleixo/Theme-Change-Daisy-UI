@@ -1,10 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
-const Navbar = () => {
-    const [theme, setTheme] = useState<string>(
-        localStorage.getItem("theme") ?? "light"
-    );
+interface NavbarProps {
+    theme: string;
+    setTheme: (theme: string) => void;
+}
 
+const Navbar = ({ theme, setTheme }: NavbarProps) => {
     const handleToggle = (e: React.ChangeEvent<HTMLInputElement>) => {
         if (e.target.checked) {
             setTheme("dark");
