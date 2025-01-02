@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const App = () => {
     const [theme, setTheme] = useState<string>(
@@ -13,9 +14,12 @@ const App = () => {
     }, [theme]);
 
     return (
-        <div>
+        <div className="h-screen flex flex-col">
             <Navbar theme={theme} setTheme={setTheme} />
-            <Hero theme={theme} setTheme={setTheme} />
+            <div className="flex-1 overflow-y-auto">
+                <Hero theme={theme} setTheme={setTheme} />
+                <Footer />
+            </div>
         </div>
     );
 };

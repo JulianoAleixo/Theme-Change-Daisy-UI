@@ -21,7 +21,7 @@ const Navbar = ({ theme, setTheme }: NavbarProps) => {
     }, [theme]);
 
     return (
-        <div className="navbar bg-primary text-primary-content px-4 fixed z-10">
+        <div className="navbar bg-primary text-primary-content w-full">
             <div className="flex-1">
                 <button className="btn btn-ghost text-xl">daisyUI</button>
             </div>
