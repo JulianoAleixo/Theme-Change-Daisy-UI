@@ -57,6 +57,19 @@ const Hero = ({ theme, setTheme }: HeroProps) => {
                     </button>
                 </div>
             </div>
+            <div className="flex justify-center self-end pb-6">
+                <span className="animate-bounce text-2xl">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="48"
+                        height="48"
+                        viewBox="0 0 24 24"
+                        className="fill-current"
+                    >
+                        <path d="M12 16.5l-6-6h12l-6 6z"></path>
+                    </svg>
+                </span>
+            </div>
         </div>
     );
 };

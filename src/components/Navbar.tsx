@@ -25,7 +25,7 @@ const Navbar = ({ theme, setTheme }: NavbarProps) => {
             <div className="flex-1">
                 <button className="btn btn-ghost text-xl">daisyUI</button>
             </div>
-            <div className="flex-none">
+            <div className="flex-none px-4">
                 <label className="swap swap-rotate">
                     <input type="checkbox" onChange={handleToggle} checked = {theme !== "light"} />
 
